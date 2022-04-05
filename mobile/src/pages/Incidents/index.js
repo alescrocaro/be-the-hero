@@ -34,7 +34,7 @@ export default function Incidents() {
     setLoading(false);
 
     // anexa os novos incidents ao inves de passar pra prox pag
-    setIncidents([...incidents, ...response.data]); 
+    setIncidents([...incidents, ...response.data]); // anexa 2 vetores num só
     setTotal(response.headers["x-total-count"]);
   }
 
